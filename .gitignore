@@ -206,6 +206,7 @@ fabric.properties
 hs_err_pid*
 replay_pid*
 
+<<<<<<< HEAD
 # 빌드 결과 제외
 target/
 *.jar
@@ -217,5 +218,8 @@ target/
 # 환경설정 파일
 .env
 
+=======
+target/classes/META-INF/maven/app/app/pom.properties
+>>>>>>> 0042fcacad89aeb9dd4a7655fc2900d425cb7431
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,intellij,java
