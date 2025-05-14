@@ -206,4 +206,6 @@ fabric.properties
 hs_err_pid*
 replay_pid*
 
+target/classes/META-INF/maven/app/app/pom.properties
+
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,intellij,java
