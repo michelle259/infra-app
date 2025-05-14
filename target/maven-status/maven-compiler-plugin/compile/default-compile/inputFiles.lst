@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-C:\CE\99.practice\app\src\main\java\app\api\controller\DeptAPIController.java
-C:\CE\99.practice\app\src\main\java\app\AppApplication.java
-C:\CE\99.practice\app\src\main\java\app\entity\Dept.java
-C:\CE\99.practice\app\src\main\java\app\repository\DeptRepository.java
-C:\CE\99.practice\app\src\main\java\app\service\DeptService.java
-=======
-C:\CE\99.practice\WebBoard\app\src\main\java\app\api\controller\DeptAPIController.java
-C:\CE\99.practice\WebBoard\app\src\main\java\app\AppApplication.java
-C:\CE\99.practice\WebBoard\app\src\main\java\app\entity\Dept.java
-C:\CE\99.practice\WebBoard\app\src\main\java\app\repository\DeptRepository.java
-C:\CE\99.practice\WebBoard\app\src\main\java\app\service\DeptService.java
->>>>>>> 1509c0f74fd83c0798d8a4282b44e499bd00f59d
+/home/ubuntu/infra-app/infra-app/src/main/java/app/AppApplication.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/api/controller/DeptAPIController.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/api/controller/EmpApiController.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/entity/Dept.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/entity/Emp.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/repository/DeptRepository.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/repository/EmpRepository.java
+/home/ubuntu/infra-app/infra-app/src/main/java/app/service/DeptService.java

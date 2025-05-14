@@ -19,51 +19,42 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api")
 public class DeptAPIController {
-	
+
 	private final DeptService deptService;
-	
-	
-<<<<<<< HEAD
-=======
+
 	@GetMapping("/git")
 	public String gitApi() {
 		return "git controller";
 	}
-	
-	
->>>>>>> 1509c0f74fd83c0798d8a4282b44e499bd00f59d
+
 	@GetMapping("/test")
 	public String deptApi() {
 		return "dept api controller";
 	}
-	
+
 	@GetMapping("/depts")
 	public List<Dept> getDepts() {
-		List<Dept> depts = deptService.getDepts();
-		return depts;
+		return deptService.getDepts();
 	}
-	
+
 	@GetMapping("/depts/{deptno}")
 	public Dept getDeptByDeptno(@PathVariable Integer deptno) {
-		Dept dept = deptService.getDeptByDeptno(deptno);
-		return dept;
+		return deptService.getDeptByDeptno(deptno);
 	}
-	
+
 	@PostMapping("/depts")
 	public Dept registerDept(@RequestBody Dept newDept) {
-		Dept dept = deptService.registerDept(newDept);
-		return dept;
+		return deptService.registerDept(newDept);
 	}
-	
+
 	@PutMapping("/depts/{deptno}")
 	public Dept updateDept(@RequestBody Dept updateDept, @PathVariable Integer deptno) {
-		Dept dept = deptService.updateDept(updateDept, deptno);
-		return dept;
+		return deptService.updateDept(updateDept, deptno);
 	}
-	
+
 	@DeleteMapping("/depts/{deptno}")
 	public Dept deleteDeptByDeptno(@PathVariable Integer deptno) {
-		Dept dept = deptService.deleteDeptByDeptno(deptno);
-		return dept;
+		return deptService.deleteDeptByDeptno(deptno);
 	}
 }
+
