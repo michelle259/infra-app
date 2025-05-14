@@ -2,55 +2,56 @@ package app.entity;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 @NoArgsConstructor
 @Getter
 @ToString
-@Builder
 @Entity
 @Setter
 public class Emp {
 	@Id
-	@Column(name = "empno")
+	@Column(name = "emp_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer empno;
 	
-	@Column(name = "ename")
+	@Column(name = "emp_name")
 	private String ename;
 	
-	@Column(name = "job")
+	@Column(name = "emp_position")
 	private String job;
 	
-	@Column(name = "mgr")
-	private Integer mgr;
+//	@Column(name = "mgr")
+//	private Integer mgr;
 	
-	@Column(name = "hiredate")
+	@Column(name = "hire_date")
 	private LocalDate hiredate;
 	
-	@Column(name = "sal")
+	@Column(name = "emp_salary")
 	private Double sal;
+
+	@Column(name = "emp_department")
+	private String dept;
+
+	@Column(name = "emp_email")
+	private String email;
 	
-	@Column(name = "comm")
-	private Double comm;
+//	@Column(name = "comm")
+//	private Double comm;
 	
-	@ManyToOne
-	@JoinColumn(name = "deptno")
-	private Dept dept;
-	
+//	@ManyToOne
+//	@JoinColumn(name = "dept_id")
+//	private Dept dept;
+
 	@Builder
-	public Emp(int empno, String ename, String job, Integer mgr, LocalDate hiredate, Double sal, Double comm, Dept dept) {
-		this.empno = empno;
+	public Emp(String ename, String job, LocalDate hiredate, Double sal, String dept, String email) {
+//		this.empno = empno;
 		this.ename = ename;
 		this.job = job;
-		this.mgr = mgr;
 		this.hiredate = hiredate;
 		this.sal = sal;
-		this.comm = comm;
 		this.dept = dept;
+		this.email = email;
 	}
 }

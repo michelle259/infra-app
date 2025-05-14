@@ -17,13 +17,13 @@ import lombok.ToString;
 @Entity
 public class Dept {
 	@Id
-	@Column(name = "deptno")
+	@Column(name = "dept_id")
 	private Integer deptno;
 	
-	@Column(name="dname")
+	@Column(name="dept_name")
 	private String dname;
 	
-	@Column(name = "loc")
+	@Column(name = "dept_location")
 	private String loc;
 	
 }

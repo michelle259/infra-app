@@ -4,9 +4,7 @@ package app.api.controller;
 import java.util.List;
 import java.util.Map;
 
-import app.entity.Dept;
 import app.entity.EmpRequestDto;
-import app.repository.DeptRepository;
 import org.springframework.web.bind.annotation.*;
 
 import app.entity.Emp;
@@ -17,7 +15,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 public class EmpApiController {
     private final EmpRepository empRepository;
-    private final DeptRepository deptRepository;
 
     @GetMapping("/api/emps")
     public Object getAllEmployees() {
@@ -35,13 +32,13 @@ public class EmpApiController {
         if (emp != null) {
             emp.setEname(newempdto.getEname());
             emp.setJob(newempdto.getJob());
-            emp.setMgr(newempdto.getMgr());
+//            emp.setMgr(newempdto.getMgr());
             emp.setHiredate(newempdto.getHiredate());
             emp.setSal(newempdto.getSal());
-            emp.setComm(newempdto.getComm());
+//            emp.setComm(newempdto.getComm());
 
-            Dept dept = deptRepository.findById(newempdto.getDeptno()).orElse(null);
-            emp.setDept(dept);
+//            Dept dept = deptRepository.findById(newempdto.getDeptno()).orElse(null);
+            emp.setDept(newempdto.getDept());
 
             empRepository.save(emp);
 
