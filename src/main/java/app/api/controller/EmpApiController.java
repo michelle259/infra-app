@@ -1,16 +1,6 @@
 package app.api.controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class EmpApiController {
-	@GetMapping("/api/emp-test")
-	public String empTest() {
-		return "emp api controller";
-	}
-=======
 import java.util.List;
 import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +13,25 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @RestController
 public class EmpApiController {
+
+	@GetMapping("/api/emp-test")
+	public String empTest() {
+		return "emp api controller";
+	}
+
+import java.util.List;
+import java.util.Map;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import app.entity.Emp;
+import app.repository.EmpRepository;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@RestController
+public class EmpApiController {
+
     private final EmpRepository empRepository;
 
     @GetMapping("/api/emps")
@@ -33,5 +42,5 @@ public class EmpApiController {
         }
         return employees;
     }
->>>>>>> 3e7318df108ae8804c2fed7e3435f6a11f4b91a9
+
 }
