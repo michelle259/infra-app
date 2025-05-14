@@ -23,13 +23,22 @@ public class DeptAPIController {
 	private final DeptService deptService;
 	
 	
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3e7318df108ae8804c2fed7e3435f6a11f4b91a9
 	@GetMapping("/git")
 	public String gitApi() {
 		return "git controller";
 	}
 	
 	
+<<<<<<< HEAD
+=======
+>>>>>>> 1509c0f74fd83c0798d8a4282b44e499bd00f59d
+>>>>>>> 3e7318df108ae8804c2fed7e3435f6a11f4b91a9
 	@GetMapping("/test")
 	public String deptApi() {
 		return "dept api controller";
