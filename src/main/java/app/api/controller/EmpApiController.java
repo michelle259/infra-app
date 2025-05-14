@@ -39,6 +39,7 @@ public class EmpApiController {
 
 //            Dept dept = deptRepository.findById(newempdto.getDeptno()).orElse(null);
             emp.setDept(newempdto.getDept());
+            emp.setEname(newempdto.getEmail());
 
             empRepository.save(emp);
 

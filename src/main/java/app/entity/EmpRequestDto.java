@@ -14,4 +14,5 @@ public class EmpRequestDto {
     private Double sal;
 //    private Double comm;
     private String dept;
+    private String email;
 }
