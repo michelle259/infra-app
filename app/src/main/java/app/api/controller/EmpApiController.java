@@ -19,10 +19,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @RestController
 public class EmpApiController {
-    private final EmpRepository empRepository;
-
-    
-    
+    private final EmpRepository empRepository;  
    
     
     @PostMapping("/api/emp")
